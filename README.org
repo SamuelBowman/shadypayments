@@ -1,0 +1,25 @@
+* Shady Payments
+** Run payment gateway
+*** Dev
+#+begin_src
+./shadypayments.py --modem-port /dev/ttyUSB0 --shadybank-backend http://localhost:8021
+#+end_src
+*** Prod
+#+begin_src
+./shadypayments.py --modem-port /dev/ttyUSB0 --shadybank-backend https://bucks.shady.tel
+#+end_src
+** Upload TCL program to terminal
+#+begin_src
+./upload.sh SHDYBUCK.TCL ttyUSB0
+#+end_src
+* Tranz 330 Cheat Sheet
+** Reinitialize memory
+1 + Enter
+** Diagnostics
+ * + 3
+** Recall Memory
+func 7
+** Store Memory
+func 8
+** Default Password
+Z66831
